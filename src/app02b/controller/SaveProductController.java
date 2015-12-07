@@ -1,19 +1,23 @@
 package app02b.controller;
 
+import org.springframework.stereotype.Controller;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import app02a.domain.Product;
 import app02a.form.ProductForm;
 import app02c.validator.ProductValidator;
 
-public class SaveProductController implements Controller {
+@Controller
+public class SaveProductController {
 
-	@Override
+	@RequestMapping(value = "/product_save", method = RequestMethod.POST)
 	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) {
 		// TODO Auto-generated method stub
 		ProductForm productForm = new ProductForm();
@@ -32,7 +36,7 @@ public class SaveProductController implements Controller {
 			product.setDescription(productForm.getDescription());
 			product.setPrice(Float.parseFloat(productForm.getPrice()));
 			
-			return new ModelAndView("/WEB-INF/jsp/ProductDetails.jsp", "product", product);
+			return new ModelAndView("ProductDetails", "product", product);
 		//} else {
 		//	request.setAttribute("errors", errors);
 		//	request.setAttribute("form", productForm);
