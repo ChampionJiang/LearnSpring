@@ -18,7 +18,7 @@
 	</ul>
 	</p>
 </c:if>
-<form action="product_save.action" method="post">
+<form action="product_save" method="post">
 	<fieldset>
 		<legend>
 			Add a product
