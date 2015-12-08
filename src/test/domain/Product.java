@@ -12,6 +12,7 @@ public class Product implements Serializable {
 	private String name;
 	private String description;
 	private float price;
+	private long id;
 	
 	public String getName() {
 		return name;
@@ -30,6 +31,13 @@ public class Product implements Serializable {
 	}
 	public void setPrice(float price) {
 		this.price = price;
+	}
+	public void setId(Long newId) {
+		// TODO Auto-generated method stub
+		id = newId;
+	}
+	public long getId() {
+		return id;
 	}
 	
 	
