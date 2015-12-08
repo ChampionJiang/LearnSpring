@@ -44,7 +44,8 @@
 				value="Add Product">
 		</p>
 	</fieldset>
-</form>	
+</form>
+	
 </div>
 
 </body>

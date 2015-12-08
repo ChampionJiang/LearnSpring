@@ -1,9 +1,9 @@
-package app02c.validator;
+package test.validator;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import app02a.form.ProductForm;
+import test.form.ProductForm;
 
 public class ProductValidator {
 	public List<String> validate(ProductForm productForm) {

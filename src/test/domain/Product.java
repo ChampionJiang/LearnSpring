@@ -1,4 +1,4 @@
-package app02a.domain;
+package test.domain;
 
 import java.io.Serializable;
 
