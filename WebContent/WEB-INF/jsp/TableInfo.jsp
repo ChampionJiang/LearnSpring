@@ -9,7 +9,15 @@
 <body>
 
 
-Hello, you've successfully imported a table.
+<div id="global">
+	<h4>Hello, you've successfully imported a table.</h4>
+	<p>
+		<h5>Details:</h5>
+		Total table count: ${tableNo} <br/>
+		JSON: ${table.toJSON() }<br/>
+	
+	</p>
+</div>
 
 </body>
 </html>

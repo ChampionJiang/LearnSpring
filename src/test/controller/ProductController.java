@@ -66,9 +66,4 @@ public class ProductController {
 		
 	}
 	
-	@RequestMapping(value = "/import", method = RequestMethod.GET)
-	public String importFile()
-	{
-		return "import";
-	}
 }
