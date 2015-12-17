@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-Please select the file to upload
+Please select the files to upload
 <form id="upload" method="post" action="upload" enctype="multipart/form-data" name="form1">
 <input type="file" name="file"/><br/>
 <input type="submit" name="Import" value="upload"/>
